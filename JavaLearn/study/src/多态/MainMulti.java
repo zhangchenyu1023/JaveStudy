@@ -26,7 +26,7 @@ public class MainMulti {
 //        obj.methodZi(); // 错误写法！
 
         System.out.println(obj.num); // 父：10
-//        System.out.println(obj.age); // 错误写法！
+//        API01.System.out.println(obj.age); // 错误写法！
 
         // 子类没有覆盖重写，就是父：10
         // 子类如果覆盖重写，就是子：20

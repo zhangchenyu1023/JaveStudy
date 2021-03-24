@@ -1,6 +1,6 @@
 package 多态;
 
-public class Fu /*extends s.Object*/ {
+public class Fu /*extends s.API01.Object*/ {
 
     int num = 10;
 

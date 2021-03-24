@@ -37,7 +37,7 @@ public class xxx {
         class Inner { // 局部内部类：只有当前所属的方法才能使用它，出了这个方法外面就不能用了。
             int num = 10;
             public void methodInner() {
-                System.out.println(num); // 局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效final的】。
+                API01BasicAPI.System.out.println(num); // 局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效final的】。
             }
 
         }

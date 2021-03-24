@@ -194,8 +194,8 @@ public abstract class RedPacketFrame extends JFrame {
     private void init() {
         // 层次面板-- 用于设置背景
         layeredPane = this.getLayeredPane();
-//        System.out.println("层次面板||" + layeredPane);
-        // System.out.println(layeredPane);
+//        API01.System.out.println("层次面板||" + layeredPane);
+        // API01.System.out.println(layeredPane);
 
         // 初始化框架 -- logo 和基本设置
         initFrame();
@@ -216,7 +216,7 @@ public abstract class RedPacketFrame extends JFrame {
     private void initFrame() {
         // logo
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(DIR + "\\logo.gif"));
-//        System.out.println("LOGO初始化...");
+//        API01.System.out.println("LOGO初始化...");
 
         // 窗口设置
         this.setSize(FRAME_WIDTH, FRAME_HEIGHT); // 设置界面大小
@@ -234,7 +234,7 @@ public abstract class RedPacketFrame extends JFrame {
      */
 
     private void initPanel() {
-//        System.out.println("页面初始化...");
+//        API01.System.out.println("页面初始化...");
         initInputPanel();
         initOpenPanel();
         initShowPanel();
@@ -254,7 +254,7 @@ public abstract class RedPacketFrame extends JFrame {
         inputPanel.add(input_total_show);
         inputPanel.add(input_inMoney);
 
-//        System.out.println("输入页面||" + inputPanel);
+//        API01.System.out.println("输入页面||" + inputPanel);
 
     }
 
@@ -264,7 +264,7 @@ public abstract class RedPacketFrame extends JFrame {
         // this.add(bg_label);
         openPanel.add(open_ownerName);
         openPanel.add(open_label);
-//        System.out.println("打开页面||" + openPanel);
+//        API01.System.out.println("打开页面||" + openPanel);
     }
 
     private void initShowPanel() {
@@ -276,7 +276,7 @@ public abstract class RedPacketFrame extends JFrame {
         showPanel.add(show_msg);
         showPanel.add(show_money);
         showPanel.add(show_result);
-//        System.out.println("展示页面||" + showPanel);
+//        API01.System.out.println("展示页面||" + showPanel);
         // ====================================
         // showPanel2.setLayout(null);
         // showPanel2.setBounds(0, 500, 401, 300);
@@ -295,7 +295,7 @@ public abstract class RedPacketFrame extends JFrame {
         // 移除当前页面
         layeredPane.removeAll();
 
-//        System.out.println("重新设置:新页面");
+//        API01.System.out.println("重新设置:新页面");
         // 背景lable添加到layeredPane的默认层
         layeredPane.add(panelLable.get(panel), JLayeredPane.DEFAULT_LAYER);
 
@@ -320,7 +320,7 @@ public abstract class RedPacketFrame extends JFrame {
         input_total.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
-                // System.out.println(e);
+                // API01.System.out.println(e);
                 String input_total_money = input_total.getText();
                 input_total_show.setText("$ " + input_total_money);
             }
@@ -330,16 +330,16 @@ public abstract class RedPacketFrame extends JFrame {
 
             @Override
             public void keyReleased(KeyEvent e) {
-                // System.out.println(e);
-//                System.out.println("个数:" + input_count.getText());
+                // API01.System.out.println(e);
+//                API01.System.out.println("个数:" + input_count.getText());
             }
         });
         input_msg.addKeyListener(new KeyAdapter() {
 
             @Override
             public void keyReleased(KeyEvent e) {
-                // System.out.println(e);
-//                System.out.println("留言:" + input_msg.getText());
+                // API01.System.out.println(e);
+//                API01.System.out.println("留言:" + input_msg.getText());
             }
         });
 
@@ -363,7 +363,7 @@ public abstract class RedPacketFrame extends JFrame {
 
                     input_inMoney.removeMouseListener(this);
 
-//                    System.out.println("跳转-->打开新页面");
+//                    API01.System.out.println("跳转-->打开新页面");
 
                     // 设置群主名称
                     open_ownerName.setText(ownerName);
@@ -397,11 +397,11 @@ public abstract class RedPacketFrame extends JFrame {
                     return;
                 }
 
-//                System.out.println("跳转-->展示页面");
+//                API01.System.out.println("跳转-->展示页面");
 
                 moneyList = openWay.divide(totalMoney, count);
 
-//                System.out.println(moneyList);
+//                API01.System.out.println(moneyList);
                 /*
                  * showPanel 添加数据
                  *
