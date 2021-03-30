@@ -49,22 +49,6 @@ public class JDBCUtils {
      * 释放资源
      */
     public static void close(Statement stmt, Connection conn){
-			       /* if(stmt != null){
-			            try {
-			                stmt.close();
-			            } catch (SQLException e) {
-			                e.printStackTrace();
-			            }
-			        }
-
-			        if(conn != null){
-			            try {
-			                conn.close();//归还连接
-			            } catch (SQLException e) {
-			                e.printStackTrace();
-			            }
-			        }*/
-
         close(null,stmt,conn);
     }
 
